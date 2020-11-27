@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/devpbeu/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -115,7 +115,6 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 
 # pbgroupeu
 antigen bundle colorize
-antigen bundle zsh-users/zsh=history-substring-search
 
 # Load the theme.
 antigen theme robbyrussell
@@ -123,9 +122,4 @@ antigen theme robbyrussell
 # Tell Antigen that you're done.
 antigen apply
 
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
-
-#bindkey "$terminfo[kcuu1]" history-substring-search-up
-#bindkey "$terminfo[kcud1]" history-substring-search-down
 
